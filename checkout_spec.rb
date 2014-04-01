@@ -19,7 +19,7 @@ describe Checkout do
     end
 
     specify "SR1,SR1,FR1,SR1" do
-      %i(SR1,SR1,FR1,SR1).each { |item| checkout.scan(item) }
+      %i(SR1 SR1 FR1 SR1).each { |item| checkout.scan(item) }
 
       expect(total)
     end
